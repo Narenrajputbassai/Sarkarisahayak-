@@ -1,0 +1,14 @@
+<h2>State Schemes</h2>
+<div id="list"></div>
+
+<script>
+fetch("/data/schemes.json")
+  .then(res => res.json())
+  .then(data => {
+    const state = "Haryana";
+    const filtered = data.filter(s => s.state === state);
+
+    document.getElementById("list").innerHTML =
+      filtered.map(s => `<p>${s.name}</p>`).join("");
+  });
+</script>

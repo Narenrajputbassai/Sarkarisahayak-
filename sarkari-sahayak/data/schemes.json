@@ -1,0 +1,14 @@
+[
+  {
+    "name": "PM Kisan",
+    "state": "All India",
+    "category": "Farmer",
+    "benefit": "6000 per year"
+  },
+  {
+    "name": "Haryana Saksham Yojana",
+    "state": "Haryana",
+    "category": "Unemployed",
+    "benefit": "Monthly allowance"
+  }
+]

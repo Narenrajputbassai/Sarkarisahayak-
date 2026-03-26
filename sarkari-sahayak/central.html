@@ -1,0 +1,13 @@
+<h2>Central Schemes</h2>
+<div id="list"></div>
+
+<script>
+fetch("/data/schemes.json")
+  .then(res => res.json())
+  .then(data => {
+    const filtered = data.filter(s => s.state === "All India");
+
+    document.getElementById("list").innerHTML =
+      filtered.map(s => `<p>${s.name}</p>`).join("");
+  });
+</script>
